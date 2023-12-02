@@ -1546,12 +1546,14 @@
 	</table>
 </div>
 
-<!-- <div class="content">
-	<div class="figure" style="height: 430px; background-image: url(figures/bar_chart.png); margin-top: -30px;"></div>
+<div class="content">
+	<div class="figure" style="height: 430px; background-image: url(figures/overview.pdf); margin-top: -30px;"></div>
+  
+  <!-- <object data="${pageContext.request.contextPath}/admin/indexs/images/resume.pdf" type="application/pdf" width="800px" height="2400px"></object> -->
+
 	<div style="margin: auto; margin-top: -20px" align="center">
 		<p>
-			<span class="bold">Normalized average score across <b>12</b> challenging dexterous manipulation tasks.</span> Our method (<span style="color: #c03d3e;font-weight: bolder;">H-InDex</span>) achieves <span style="font-weight: bolder;">16.8%</span> improvement over VC-1 
-      (the very recent visual foundation model for control) and <span style="font-weight: bolder;">25.4%</span> improvement over RRL (the previous state-of-the-art visual representation on Adroit).
+			The success rate of 10 visual robotic manipulation tasks demonstrates the effectiveness of diffusion reward. Means of 3 runs with std. error (shaded error).
 		</p>
 	</div>
 
@@ -1559,18 +1561,14 @@
 	<div>
 		<h2>Abstract</h2>
 		<p class="abstract">
-			
-      <span style="font-weight: bolder;">Human hands possess remarkable dexterity and have long served as a source of inspiration for robotic manipulation.</span>
-      In this work, we propose a human <span style="font-weight: bolder; color: #c03d3e;">H</span>and-<span style="font-weight: bolder; color: #c03d3e;">In</span>formed visual representation learning framework to solve difficult 
-      <span style="font-weight: bolder; color: #c03d3e;">Dex</span>terous manipulation tasks (<span style="font-weight: bolder; color: #c03d3e;">H-InDex</span>). 
-      Our framework consists of three stages: <span class="italic">(i)</span> pre-training representations with 3D human hand pose estimation, 
-      <span class="italic">(ii)</span> offline adapting representations with self-supervised keypoint detection, and 
-      <span class="italic">(iii)</span> reinforcement learning with exponential moving average BatchNorm. 
-      The last two stages only modify <span style="font-weight: bolder;">0.36%</span> parameters of the pre-trained representation in total, 
-      ensuring the knowledge from pre-training is maintained to the full extent. 
-      We empirically study <span style="font-weight: bolder;">12</span> challenging dexterous manipulation tasks and find that our method largely surpasses the previous state-of-the-art method and also the recent visual foundation models for motor control.
+			Learning rewards from expert videos offers an affordable and effective solution to specify the intended behaviors for reinforcement learning tasks. 
+      In this work, we propose <b>Diffusion Reward</b>, a novel framework that learns rewards from expert videos via conditional video diffusion models for solving complex visual RL problems.
+      Our key insight is that lower generative diversity is observed when conditioned on expert trajectories.
+      Diffusion Reward is accordingly formalized by the negative of conditional entropy that encourages productive exploration of expert-like behaviors.
+      We show the efficacy of our method over 10 robotic manipulation tasks from MetaWorld and Adroit with visual input and sparse reward. 
+      Moreover, Diffusion Reward could even solve unseen tasks successfully and effectively, largely surpassing baseline methods.
 		</p>
-	</div> -->
+	</div>
 
   <!-- <div class="hr"></div>
 	<div>
