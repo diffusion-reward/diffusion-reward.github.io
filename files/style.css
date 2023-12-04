@@ -1,15 +1,16 @@
-body {background-color: #fdfdfd; color: rgb(54, 54, 54); margin: 0; font-size: 1em;}
+body {background-color: #fdfdfd; color: rgb(54, 54, 54); margin: 0px; font-size: 1em; }
 h1, h2, h3, h4, h5 {text-align: center;}
 h1 {margin-bottom: 24px; font-size: 2.2em; font-weight: normal;}
 h2 {margin-top: 48px; font-weight: bold !important;}
 h1, h2, h3, h4, h5, a, p, span, body {font-weight: normal; font-family: "Google Sans", sans-serif;}
 .header {background-color: #fdfdfd; width: 100%; padding-top: 48px; padding-bottom: 8px;}
 .links {width: 100%; margin: auto; text-align: center; padding-top: 8px;}
-.content {max-width: 960px; margin: auto; margin-top: 48px; margin-bottom: 64px;}
+.content {max-width: 1260px; margin: auto; margin-top: 48px; margin-bottom: 64px;}
 a, h2 {color: #c03d3e; text-decoration: none;}
 a:hover {color: #ce5252;}
 .nobreak {white-space: nowrap;}
-.hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
+.hr {height: 1px; background-color: #d6dbdf; max-width: 960px; margin: auto; margin-top: 48px;}
+.hr-long {width: 100%; margin: 48px 0px; height: 1px; background-color: #d6dbdf;}
 p {line-height: 1.4em; text-align: justify;}
 .abstract {max-width: 600px; margin: auto;}
 .math {font-family: "Computer Modern Sans", sans-serif; font-style: italic;}
@@ -19,7 +20,7 @@ sub, sup {line-height: 0;}
 .youtube-container {background-color: #000; margin-top: 32px;}
 .youtube {display: block; margin: auto; width: 960px; padding-top: 20px; padding-bottom: 20px;}
 .content-video {width: 100%; margin: 0; text-align: center;}
-.content-video-container {width: 100%; max-width: 1060px; margin: auto;}
+.content-video-container {width: 100%; max-width: 100%; margin: auto;}
 .content-video-frame {display: inline-block; width: 49%; text-align: center;}
 .content-video-frame.medium {width: 30%;}
 .content-video-frame.large {width: 36%;}
@@ -49,8 +50,12 @@ footer {background-color: #efeff3; width: 100%; margin-top: 32px; padding-top: 1
     text-align: center;
   }
   
-  .video-container figcaption {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
+.video-container figcaption {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.author-block {
+  display: inline-block;
+}
   
